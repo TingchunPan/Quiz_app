@@ -49,14 +49,14 @@ class QuizInterface:
     def user_false(self):
         # self.user_answer="False"
         is_correct=self.quiz.check_answer("False")
-        self.feed_back(is_correct)
+        self.feedback(is_correct)
 
     def user_true(self):
         is_correct=self.quiz.check_answer("True")
-        self.feed_back(is_correct)
+        self.feedback(is_correct)
 
 
-    def feed_back(self,is_correct):
+    def feedback(self,is_correct):
         if is_correct:
             self.canvas.config(bg="green")
 
